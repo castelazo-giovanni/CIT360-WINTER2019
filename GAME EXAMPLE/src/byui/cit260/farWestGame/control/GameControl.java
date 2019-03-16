@@ -232,6 +232,10 @@ public class GameControl {
         return items;
     }
 
+    
+        //author Giovanni
+    
+    
     public static void saveGame(Game game, String fileName) throws GameControlException {
         try (FileOutputStream fops = new FileOutputStream(fileName)) {
             ObjectOutputStream output = new ObjectOutputStream(fops);
