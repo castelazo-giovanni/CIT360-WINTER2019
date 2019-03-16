@@ -11,6 +11,11 @@ import java.util.concurrent.Executors;        //library needs to be imported to 
 import java.io.*;
 import java.text.*;
 
+
+/**
+ *
+ * @author Giovanni
+ */
 public class creatingExecutor {
 
 	public static void main(String[] args) {
@@ -47,7 +52,7 @@ public class creatingExecutor {
          ExecutorService pool = Executors.newFixedThreadPool(5);  //preconfigured factory method
          
          for(int n : nums) {
-        	 pool.execute( new PrimeTask(n));
+        	 pool.execute( new PrimeTask(n));  // launches new task
          }
          pool.shutdown();  // Closes executor
 	}

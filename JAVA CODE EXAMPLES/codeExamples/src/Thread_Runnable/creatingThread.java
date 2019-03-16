@@ -37,15 +37,15 @@ class MyCalculationsThread extends Thread {                   // Extending Threa
     MyCalculationsThread(long numberToFactor, String threadName){  // MyCalculationsThread is my subclass
         super(threadName);
         this.numberToFactor = numberToFactor;
-        start();  // this invokes run()
+        start();  // This invokes run()
     }
 
     @Override
-    public void run() { // this is where the new thread starts
+    public void run() { // New thread starts here
         isItPrime();
     }
 
-    private void isItPrime() { // only designed to work with odd numbers
+    private void isItPrime() { // Designed to work with odd numbers
         double squareRoot = Math.sqrt(numberToFactor);
         int i;
         for ( i = 2; i <= squareRoot; i++) {
