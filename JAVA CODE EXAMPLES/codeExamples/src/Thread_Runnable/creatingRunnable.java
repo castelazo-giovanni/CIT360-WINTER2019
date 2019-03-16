@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package Thread_Runnable;
-
 import java.util.Scanner;
 
 /**
@@ -26,8 +25,9 @@ public class creatingRunnable {
     
         MyCalculationsRunnable mc = new MyCalculationsRunnable(myNum);  //creates object that implements Runnable
         Thread newthread = new Thread(mc);  // takes Runnable as parameter
-        newthread.start();  //invokes start() method, which invokes run() method from MyCalculationsRunnable class
-
+        
+        newthread.start();    //invokes start() method, which invokes run() method from MyCalculationsRunnable class
+        
         Thread mainThread = Thread.currentThread(); // main thread
 
         System.out.println("Active threads for this thread group: " + Thread.activeCount());
