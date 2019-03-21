@@ -3,19 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package productsdemo_hibernate;
+package hibernate;
+import hibernate.*;
 
 /**
  *
  * @author Giovanni
  */
-public class ProductsDemo_Hibernate {
+public class Hibernate {
 
-    /*
+    /**
      * @param args the command line arguments
-    */
+     */
     public static void main(String[] args) {
-        // TODO code application logic here
+  
+        
+    
     }
     
 }
