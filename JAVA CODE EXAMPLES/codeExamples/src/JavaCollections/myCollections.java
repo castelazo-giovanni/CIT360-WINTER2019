@@ -42,21 +42,5 @@ public class myCollections {
             System.out.println(myList.get(i));
         }
 
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
+    }    
+ }
