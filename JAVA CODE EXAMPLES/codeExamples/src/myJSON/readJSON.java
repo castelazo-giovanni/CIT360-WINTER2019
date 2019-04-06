@@ -38,7 +38,7 @@ public class readJSON {
             System.out.println(familyList);
              
             //Iterate over family array
-            familyList.forEach( emp -> parseFamilyObject( (JSONObject) emp ) );
+            familyList.forEach( fam -> parseFamilyObject( (JSONObject) fam ) );
  
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -69,10 +69,5 @@ public class readJSON {
         // Output family member information
         System.out.println(firstName + " " + lastName + "\n" + relation + "\n");
     }
-    
-    
-    
-    
-    
     
 }
