@@ -180,7 +180,7 @@ public class ItemControlTest {
         int beginningWheel = 3;
         int beginningBullets = 200;
         int beginningWood = 12;
-        int remainingNourishment = 200;
+        double remainingNourishment = 200;
         
         // define the expected output value
         double expResult = 490;

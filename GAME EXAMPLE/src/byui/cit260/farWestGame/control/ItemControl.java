@@ -90,7 +90,7 @@ public class ItemControl {
     }
 
     // Author Giovanni (team assignment)
-    public static double calNourishmentUsedOld(int numberActors, int milesTraveled) throws ItemControlException {
+    public static double calNourishmentUsed(int numberActors, int milesTraveled) throws ItemControlException {
         // checks to make sure you don't have too many or not enough actors
         if (numberActors < 1 || numberActors > 4) {
             throw new ItemControlException("There amount of family members is incorrect.");
@@ -126,13 +126,13 @@ public class ItemControl {
         return nourishmentUsed;
     }
 
-    public static double calNourishmentUsed(int numberActors, int milesTraveled) throws ItemControlException {
+    public static double calNourishmentUsedOld(int numberActors, int milesTraveled) throws ItemControlException {
         // code calculates the nourishment used by the group
         double nourishmentUsed = .25 * milesTraveled * (numberActors + 1);
 
         return nourishmentUsed;
     }
-    public static double calResource(int beginningWheel, int beginningBullets, int beginningWood, double remainingNourishment) throws ItemControlException {
+    public static double calResourceOld(int beginningWheel, int beginningBullets, int beginningWood, double remainingNourishment) throws ItemControlException {
 
         // calculates the total resource weight
         double totalResourceWeight = (beginningWheel * 50) + (beginningBullets * .10) + (beginningWood * 10) + remainingNourishment;
@@ -148,7 +148,7 @@ public class ItemControl {
     }
 
     // Author Giovanni (individual assignment)
-    /*public static double calResource(int beginningWheel, int beginningBullets, int beginningWood, double remainingNourishment) throws ItemControlException {
+    public static double calResource(int beginningWheel, int beginningBullets, int beginningWood, double remainingNourishment) throws ItemControlException {
 
         // checks to make sure that beginning wheel does not exceed max
         if (beginningWheel < 0 || beginningWheel > 10) {
@@ -179,7 +179,7 @@ public class ItemControl {
         } else {
             return totalResourceWeight;
         }
-    }*/
+    }
     //Author Araceli Camarillo (Team Assignment)
     public static double calSupplyUsed(int beginningWheel, int beginningBullets, int beginningWood, int wheelUsed, int bulletsUsed, int woodUsed) throws ItemControlException {
         if (beginningWheel < 0 || beginningWheel > 10) {

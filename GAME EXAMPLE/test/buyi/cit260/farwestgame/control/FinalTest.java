@@ -160,7 +160,7 @@ public class FinalTest {
         System.out.println("\tTest case 1");
         
         // define the input variables
-        int beginningWheel = ItemControl.beginningBullets;
+        int beginningWheel = 0;
         int beginningBullets = 200;
         int beginningWood = 12;
         int remainingNourishment = 200;
@@ -176,7 +176,7 @@ public class FinalTest {
         //test to see if the result expected equals the expected result
         assertEquals(expResult, result, 0.0);
         
-        System.out.println("begining Wheel = " + beginningWheel);
+        // System.out.println("begining Wheel = " + beginningWheel);
         
         
         // ---- calResourse Test Case 2 ----
